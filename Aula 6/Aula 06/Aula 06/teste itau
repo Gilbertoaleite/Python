@@ -1,0 +1,8 @@
+t = 1
+m = 5
+c = 10
+
+while t < m:
+c = c * ( 1.t)
+t = t + 1
+prin(c)

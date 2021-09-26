@@ -1,0 +1,57 @@
+-----------------------------
+Como ajustar o Sublime para
+rodar Python com CTRL+B
+-----------------------------
+Assista o vídeo dessa explicação em:
+https://www.youtube.com/watch?v=1arwXdvhqRc
+-----------------------------
+
+Abra o editor Sublime e execute os comandos abaixo:
+
+1º) Instale o Package Control:
+- Pressione SHIFT+CTRL+P ou no menu no topo, vá em Tools, Command Palette
+- Digite "pack" sem as aspas e você deve ver aparecer "Install Package Control"
+- Clique em "Install Package Control" e aguarde alguns instantes
+- Quando aparecer uma janelinha com a mensagem "Package Control Successfully Installed" clique "OK"
+
+2º) Instale o SublimeREPL:
+- Pressione SHIFT+CTRL+P ou no menu no topo, vá em Tools, Command Palette
+- Digite "install" sem as aspas e você deve ver aparecer "Package Control: Install Package"
+- Clique em "Package Control: Install Package" e aguarde alguns instantes
+- Uma lista enorme de pacotes deve surgir
+- Digite "sublimerepl" sem as aspas e você deve ver aparecer "SublimeREPL"
+- Clique em "SublimeREPL" e o pacote será instalado
+
+3º) Configure o Sublime para usar o SublimeREPL:
+- No menu no topo, vá em Tools, Build System, New Build System
+- Uma nova aba vai se abrir no Sublime, cotnendo algum texto
+- Apague todo o texto e substitua por:
+
+{
+    "target": "run_existing_window_command", 
+    "id": "repl_python_run",
+    "file": "config/Python/Main.sublime-menu"
+}
+
+- Clique em File, Save As e salve com o nome "PythonRepl.sublime-build" (sem as aspas) dentro da pasta "User"
+- Clique em Tools, Build System e selecione "PythonRepl"
+
+Pronto! Agora pra rodar Python direto de dentro do Sublime é só teclar CTRL+B
+
+-----------------------------------------------------------------
+Inscreva-se gratuitamente em https://gratis.com.br/cursos e receba um certificado digital de participação ao final do curso (formato PDF, com chave de validação).  
+
+Lembre-se de se inscrever aqui no nosso canal e clicar no sininho para ativar as notificações.
+
+Seja membro deste canal e ganhe benefícios:
+https://youtube.com/equipedogratis/join
+
+Siga-nos também no Instagram:
+https://instagram.com/equipedogratis
+
+E participe dos nossos grupos exclusivos:
+WhatsApp: https://gratis.com.br/whatsapp
+Telegram: https://gratis.com.br/telegram
+
+Site Oficial: https://gratis.com.br
+-----------------------------------------------------------------
